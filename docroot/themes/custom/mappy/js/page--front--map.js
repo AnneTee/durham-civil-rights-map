@@ -49,6 +49,8 @@
   var spiderfier = new OverlappingMarkerSpiderfier(map);
   spiderfier.nearbyDistance = 20;
   spiderfier.keepSpiderfied = true;
+  spiderfier.legColors.highlighted = '#800068';
+
   // Rather than attaching a listener to each layer, attach a listener to the spiderfier.
   var popup = new L.Popup({closeButton: false, offset: new L.Point(0.5, -24)});
   spiderfier.addListener('click', function(marker) {
